@@ -76,7 +76,7 @@ def rsa_crack_known_primes_small(p,q,e,n,c):
     h_factor = h_factor - 1
   
   
-  for i in range(h_factor,1,-1):
+  for i in range(h_factor,1,-2):
     if sympy.isprime(i):
        if(not check_mod0(n,i)):
          print ("prime is [%d]" %(i))
@@ -98,7 +98,7 @@ def rsa_crack_known_primes_small(p,q,e,n,c):
 def main():
   rsa_simple_sample()
   rsa_crack_known_primes_small(0xB, 0x3, 0x3, 0x21,0x11)
-
+  #rsa_crack_known_primes_small(0x101, 0x151, 0x11, 0x15251,0x30A0)
 
 
 
