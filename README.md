@@ -1,6 +1,7 @@
 # 1>crack-small-rsa-with-known-prime-factors-and-public-key
 # 2>crack-small-rsa-with-unknown-prime-factors-and-public-key
 
-till now tested on 16bit data
+Use only till 16bit data-size.
+
 
 will edit this soon-------:)
