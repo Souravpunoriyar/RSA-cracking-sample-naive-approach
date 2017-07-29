@@ -2,7 +2,10 @@
 
 import math
 import sympy
+
 """
+wikilink:https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29
+
 1>Select primes p=11, q=3.
 
 2>n = pq = 11.3 = 33
@@ -64,7 +67,7 @@ def modinv(a,m):
 
 
 def decrypt_using_private_key(c,e,d,n):
-    m = (c**d)%n
+    m = (c**d)%n            #remove this approach
     print "original_data:" + str(m)
 
 
