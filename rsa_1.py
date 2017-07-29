@@ -87,7 +87,7 @@ def rsa_crack_known_primes_small(p,q,e,n,c):
   phi_p = (obt_p - 1)
   phi_q = (obt_q - 1)
   obt_phi = phi_p * phi_q
-  obt_d = modinv(e,obt_phi)
+  obt_d = modinv(e,obt_phi) #getting private key component
   decrypt_using_private_key(c, e, obt_d, n)
 
     
