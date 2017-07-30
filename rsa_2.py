@@ -5,6 +5,7 @@ import sympy
 
 """
 wikilink:https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29
+A clean web tool for rsa: http://www.mobilefish.com/services/rsa_key_generation/rsa_key_generation.php
 
 1>Select primes p=11, q=3.
 
