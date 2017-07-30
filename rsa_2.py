@@ -104,6 +104,7 @@ def rsa_crack_with_unknown_primes(c,e,n):
   phi_q = (obt_q - 1)
   obt_phi = phi_p * phi_q
   obt_d = modinv(e,obt_phi) #getting private key component d
+  print ("private_key d[%d]" %(obt_d))
   decrypt_using_private_key(c, e, obt_d, n)
   
 
@@ -121,11 +122,11 @@ def main():
 
   if choice == 1:
     print "cracking rsa with known primes(p,q) and public (e,n)"
-    p = int(raw_input("Prime Factor in hex (p): "))
-    q = int(raw_input("Prime Factor in hex (q): "))
-    e = int(raw_input("Public key exponent in hex (e): "))
-    n = int(raw_input("Modulus in hex (n): "))
-    c = int(raw_input("Cipher value in hex (c): "))
+    p = int(raw_input("Prime Factor in hex (p): "),16)
+    q = int(raw_input("Prime Factor in hex (q): "),16)
+    e = int(raw_input("Public key exponent in hex (e): "),16)
+    n = int(raw_input("Modulus in hex (n): "),16)
+    c = int(raw_input("Cipher value in hex (c): "),16)
     rsa_crack_known_primes_small(p,q,e,n,c)
   elif choice == 2:
     print "cracking rsa with unknown primes and known public key (e,n)"
