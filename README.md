@@ -3,6 +3,5 @@
 
 Use only till 16bit key-size.
 
-LtL: Love to Learn.
 
 will edit this soon-------:)
